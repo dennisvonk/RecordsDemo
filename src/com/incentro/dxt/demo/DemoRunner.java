@@ -1,12 +1,11 @@
 package com.incentro.dxt.demo;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class DemoRunner {
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) {
         PersonBean pb = new PersonBean("Dennis", "Vonk", "Nunspeet", LocalDate.now(), new ArrayList<>());
         System.out.println(pb);
 
