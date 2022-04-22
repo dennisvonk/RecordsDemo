@@ -14,5 +14,13 @@ public class DemoRunner {
 
         PersonRecord pr = new PersonRecord("Dennis", "Vonk", "Nunspeet", LocalDate.now(), new ArrayList<>());
         System.out.println(pr);
+        System.out.println(pr.getFullName());
+
+        try {
+            final PersonRecord emptyname = new PersonRecord("", null, "Nunspeet", LocalDate.now(), new ArrayList<>());
+        }
+        catch (final IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
